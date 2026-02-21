@@ -4,9 +4,9 @@ const app = express();
 app.use(express.json());
 
 app.get("/health", (req, res) => {
-  res.json({ status: "API Service Running" });
+  res.json({ status: "Notification Service API Running" });
 });
 
 app.listen(3002, () => {
-  console.log("API running on port 3002");
+  console.log("Notification Service API running on port 3002");
 });
